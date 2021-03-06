@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: #ffcccc;
+}
+header nav a, header nav a:link, header nav a:visited {
+  text-decoration: none;
+  color: #eb5687;
+  margin-left: 10px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffcccc;
+}
+
+.nav-footer {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.nav-footer a,
+.nav-footer a:visited,
+.nav-footer a:link {
+  text-decoration: none;
+}
+.nav-footer a img,
+.nav-footer a:visited img,
+.nav-footer a:link img {
+  width: 30px;
+  margin: 10px;
+}
+
+.div-creditos {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.div-creditos a,
+.div-creditos a:visited,
+.div-creditos a:link {
+  text-decoration: none;
+  text-decoration: none;
+  color: #eb5687;
+}
+
+.div-buy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.portada {
+  width: 100vw;
+  margin: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+button {
+  background-color: #eb5687;
+  color: #ffff;
+  border: none;
+  padding: 10px;
+}
+
+.card-product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*# sourceMappingURL=style.css.map */
