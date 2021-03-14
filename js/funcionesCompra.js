@@ -1,7 +1,7 @@
 function carritoLleno() {
     alert(`¡SU CARRITO ESTA LLENO! Estos son sus productos: ${carrito.toString()}`);
     console.warn("El carrito esta lleno");
-    console.info(`en el carrito se encuentra ${carrito[0]}`);
+    console.info(`en el carrito se encuentra ${carrito.toString()}`);
 }
 
 function seguirComprando() {
