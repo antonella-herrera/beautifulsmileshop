@@ -1,35 +1,31 @@
-class Productos{
-    constructor(nombre,precio,codigo){
-        this.nombre= nombre;
-        this.precio= parseFloat(precio);
-        this.codigo = `bsi${codigo}`
-    }
-    infoDelProducto(){
-    alert (this.info = `${this.nombre} (${this.codigo}) vale $${this.precio} `) 
+const PRODUCTOS = [
+    {"nombre":"Pantalon Inquita", "precio": 1900, "productoid": 105, "imagen" : "pantalon.jpg"},
+    {"nombre": "Pantalon BS", "precio": 1200, "productoid": 107, "imagen" : "pantalon.jpg"},
+    {"nombre":"Pantalon Reina Divina", "precio": 1900, "productoid": 108, "imagen" : "pantalon.jpg"},
+    {"nombre":"Remera Cartoon", "precio": 800, "productoid": 231,"imagen": "remera.jpg"},
+    {"nombre":"Remera BS", "precio": 595, "productoid": 1232, "imagen": "remera.jpg"},
+    {"nombre":"Remera Frase", "precio": 700, "productoid": 234, "imagen": "remera.jpg"},
+]
+
+
+const listadoProductos = document.getElementById("listadoProductos")
+
+//CARGAR PRODUCTOS
+function cargarProdcutos(){
+    for (productolistado of PRODUCTOS) {
+        let columna =                `<div class="col-4 card-product"> 
+        <img src="../imagenes/productos/${productolistado.imagen}" alt="${productolistado.nombre}" class= "img-fluid imgGrandes">
+        <h4>${productolistado.nombre}</h4>
+        <p>$${productolistado.precio}</p>
+        <div class="d-flex justify-content-around">
+        <button onclick="añadirAlCarrito(${productolistado.productoid})" class="botonesChicos"><img src="../imagenes/logoseiconos/precio.svg" alt="boton compra" class= "img-fluid"></button>
+        <button onclick="añadirFavoritos(${productolistado.productoid})" class="botonesChicos"><img src="../imagenes/logoseiconos/estrella.svg" alt="boton añadir a favoritos" class= "img-fluid"></button>
+        </div>
+        </div>`
+                listadoProductos.innerHTML += columna
     }
 }
 
-const pantalonInquita = new Productos("Pantalon Inquita",1900, 105)
-const remerasCartoon = new Productos ("Remera Cartoon", 595, 106)
+cargarProdcutos()
 
-function mostrarInfodelproductor(productoseleccionado){
-    if (productoseleccionado="jeanInquita"){
-    pantalonInquita.infoDelProducto()
-    } else if(productoseleccionado="remeraCartoon"){
-    remerasCartoon.infoDelProducto();
-    }else{
-        alert("No es un producto en el sistema")
-    }
-    
-}
-
-let pantalonInquitaConDescuento
-function descuentoDeJean(productocConDescuento){
-    if(productocConDescuento="Jean"){
-       pantalonInquitaConDescuento = pantalonInquita.precio * 0.80
-    }else{
-        alert("Este articulo no tiene descuento")
-    }
-
-}
 

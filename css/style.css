@@ -70,7 +70,7 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-button {
+.buttonRosas{
   background-color: #eb5687;
   color: #ffff;
   border: none;
@@ -83,4 +83,30 @@ button {
   align-items: center;
 }
 
+.botonesChicos{
+  background-color: transparent;
+  width: 30px;
+  border: none;
+  margin: 10px;
+}
+h1{
+  text-align: center;
+  color: #eb5687;
+  font-weight: 500;
+  margin: 20px;
+}
+h2{
+  text-align: center;
+}
+.imgGrandes{
+  margin: 20px;
+}
+.imagenesChicas{
+  margin: 0px 10px;
+  width: 30px;
+}
+
+.secciones{
+  padding: 20px;
+}
 /*# sourceMappingURL=style.css.map */
