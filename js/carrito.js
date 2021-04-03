@@ -1,14 +1,12 @@
-class CarritoDeCompras {
-    constructor() {
-        carrito = []
-        let total = 0
-    }
-}
+// class CarritoDeCompras {
+//     constructor() {
+//         carrito = []
+//         let total = 0
+//     }
+// }
 
-const CARRITO = []
+CARRITO = []
 
-
- //añadir al carrito
 function añadirAlCarrito(id) {
     let r = PRODUCTOS.find(p => p.productoid == id);
     CARRITO.push(r);
@@ -16,28 +14,32 @@ function añadirAlCarrito(id) {
     cargaAlCarrito()
 }
 
+function borraDelCarrito(id) {
+    let r = PRODUCTOS.find(p => p.productoid == id);
+    CARRITO.remove(r);
+    localStorage.removeItem(r.nombre);
+    cargaAlCarrito()
+}
 
+//Boton para finaliz la compra
 
- //Boton para finaliz la compra
-const botonComprar = document.getElementById("botonComprar");
+$('#botonFinalizaCompra').on("click", function() {
+    CARRITO=[]
+    localStorage.clear()
+    cargaAlCarrito()
+        }
+        );
 
-botonComprar.addEventListener("click",finalizarCompra)
-botonComprar.classList.add("buttonRosas")
-
-function finalizarCompra() {
-    CARRITO.splice(0, CARRITO.length)
-    localStorage.clear()}
-
- //Tabla de carrito
+//Tabla de carrito
 const tablaCarrito = document.getElementById("tablaCarrito")
-
 function cargaAlCarrito() {
-    for (productosCarrito of CARRITO) {
-        let fila = `<tr>
-                            <td>${productosCarrito.nombre}</td>
-                            <td>$ ${productosCarrito.precio}</td>
-                        </tr>`
-        tablaCarrito.innerHTML += fila
+    for(let i=0; i< localStorage.length; i++){
+        let clave = localStorage.key(i);
+        let fila =`<tr>
+        <td>${clave}</td>
+        <td>$ ${localStorage.getItem(clave)}</td>
+    </tr>`
+    tablaCarrito.innerHTML += fila
     }
 }
 
