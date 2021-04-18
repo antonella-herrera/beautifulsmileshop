@@ -1,0 +1,128 @@
+[
+    {
+    "nombre": "Jean Inquita Black",
+    "precio": 1900,
+    "productoid": 105,
+    "imagen": "remera-basica-brekeup.jpg",
+    "stock": 5
+},
+{
+    "nombre": "Jean Inquieta Break",
+    "precio": 1200,
+    "productoid": 107,
+    "imagen": "remera-basica-brekeup.jpg",
+    "stock": 6
+},
+{
+    "nombre": "Jean Inquieta",
+    "precio": 1200,
+    "productoid": 107,
+    "imagen": "remera-basica-brekeup.jpg",
+    "stock": 5
+},
+{
+    "nombre": "Jean Reina Divina",
+    "precio": 1900,
+    "productoid": 108,
+    "imagen": "remera-basica-brekeup.jpg",
+    "stock" :6
+},
+{
+    "nombre": "Jean ",
+    "precio": 1900,
+    "productoid": 105,
+    "imagen": "remera-basica-brekeup.jpg",
+    "stock": 6
+},
+{
+    "nombre": "Remera Cartoon",
+    "precio": 800,
+    "productoid": 200,
+    "imagen": "remera-basica-brekeup.jpg",
+    "stock": 8
+},
+{
+    "nombre": "Remera Voge",
+    "precio": 760,
+    "productoid": 201,
+    "imagen": "remera-basica-brekeup.jpg",
+    "stock": 2
+},
+{
+    "nombre": "Remera Phoenix",
+    "precio": 600,
+    "productoid": 202,
+    "imagen": "remera-basica-brekeup.jpg",
+    "stock": 0
+},
+{
+    "nombre": "Remera Energy",
+    "precio": 600,
+    "productoid": 203,
+    "imagen": "remera-basica-brekeup.jpg",
+    "stock": 3
+},
+{
+    "nombre": "Remera The Moon",
+    "precio": 600,
+    "productoid": 204,
+    "imagen": "remera-basica-brekeup.jpg",
+    "stock": 2
+},
+{
+    "nombre": "Remera Basica Algodon Premium",
+    "precio": 700,
+    "productoid": 205,
+    "imagen": "remera-basica-brekeup.jpg",
+    "stock": 3
+},
+{
+    "nombre": "Remera Luna",
+    "precio": 700,
+    "productoid": 206,
+    "imagen": "remera-basica-brekeup.jpg"
+},
+{
+    "nombre": "Remera The Moon",
+    "precio": 600,
+    "productoid": 207,
+    "imagen": "remera-basica-brekeup.jpg",
+    "stock": 3
+},
+{
+    "nombre": "Pupera Skeetlovepea",
+    "precio": 1150,
+    "productoid": 208,
+    "imagen": "pupera-skeetlovepea.jpg",
+    "stock": 4
+},
+{
+    "nombre": "Pupera Modal",
+    "precio": 1150,
+    "productoid": 209,
+    "imagen": "pupera-modal-skeetlovepea.jpg",
+    "stock": 4
+},
+{
+    "nombre": "Remera basica Break Up",
+    "precio": 1100,
+    "productoid": 210,
+    "imagen": "remera-basica-brekeup.jpg",
+    "stock": 4
+},
+{
+    "nombre": "Checus Cuadrille",
+    "precio": 2500,
+    "productoid": 300,
+    "imagen": "ckecus-cuadrille.jpg",
+    "stock": 2
+},
+{
+    "nombre": "Chaleco Pie Poule",
+    "precio": 1256,
+    "productoid": 301,
+    "imagen": "chaleco-pie-poule.jpg",
+    "stock": 2
+}
+
+]

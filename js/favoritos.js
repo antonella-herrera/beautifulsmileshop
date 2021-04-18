@@ -1,21 +1,14 @@
 //favoritos
-const listadoFavoritos = document.getElementById("listadoFavoritos")
-
-function listarFavoritos(){
-    debugger
-    for(let i=0; i< localStorage.length; i++){
-        let clave = localStorage.key(i);
-        let filaFavoritos = `<tr>
-                                <td>${clave}</td>
-                                <td>$ ${localStorage.getItem(clave)}</td>
-                            </tr>`
-
-                            listadoFavoritos.innerHTML += filaFavoritos
+class Favoritos{
+    constructor(){
+        this.favorito = []
+        let total = 0
+    } 
+    añadirAlCarrito(id) {
+        let r = PRODUCTOS.find(p => p.productoid == id);
+        this.favorito.push(r);
+        localStorage.setItem('carrito', JSON.stringify(this.favorito));
     }
 }
 
-function añadirFavoritos(idfav){
-    let r = PRODUCTOS.find(p => p.productoid == idfav);
-    localStorage.setItem(r.nombre, r.precio);
-    listarFavoritos()
-}
+let favoritos = new Favoritos()

@@ -23,62 +23,22 @@
 
 <body>
     <header>
-        <a href="index.html"> <img src="" alt="logo de la tienda"></a>
-        <nav>
+        <nav class="header-nav">
             <a href="index.html">Inico</a>
             <a href="tineda.html">Tienda</a>
-            <a href="#favoritos"><img src="imagenes/logoseiconos/estrella.svg" alt="link a favoritos" class="botonesChicos"></a>
-            <a href="#carrito"><img src="imagenes/logoseiconos/carretilla.svg" alt="link carrito" class="botonesChicos"></a>
-
+            <a href="favoritos.html"><img src="imagenes/logoseiconos/estrella.svg" alt="link a favoritos" class="botonesChicos"></a>
+            <a href="carrito.html"><img src="imagenes/logoseiconos/carretilla.svg" alt="link carrito" class="botonesChicos"></a>
         </nav>
     </header>
-
+    </header>
     <section class="secciones">
         <div class="container">
-            <h2>Tienda</h2>
-            <div class="row" id ="listadoProductos">
+            <h2>TIENDA</h2>
+            <div class="row" id ="listadoProductos" style="display: none;">
             <!--Prodcutos-->
         </div>
     </section>
 
-<!--Carrito-->
-<section class="container secciones" id="carrito">
-    <div class="d-flex justify-content-center">
-    <img src="imagenes/logoseiconos/carretilla.svg" class="imagenesChicas" alt="carrito">
-    <h2>Carrito</h2>
-    </div>
-    <table class="table">
-        <thead>
-            <tr>
-                <td>Producto</td>
-                <td>Precio</td>
-            </tr>
-        </thead>
-        <tbody id="tablaCarrito">
-        </tbody>
-    </table>
-
-    <button id="botonFinalizaCompra" class="botonRosa">Finalizar compra</button>
-</section>
-
-<!--favoritos-->
-<section class="container secciones" id="favoritos">
-    <div class="d-flex justify-content-center">
-    <img src="imagenes/logoseiconos/estrella.svg" class="imagenesChicas" alt="carrito">
-    <h2>Favoritos</h2>
-    </div>
-    <table class="table">
-        <thead>
-            <tr>
-                <td>Producto</td>
-                <td>Precio</td>
-            </tr>
-        </thead>
-        <tbody id="listadoFavoritos">
-
-        </tbody>
-    </table>
-</section>
 
     <!--Footer-->
     <footer>
@@ -106,7 +66,8 @@
     </footer>
     <!--fin footer-->
     <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/carrito.js"></script>
+    <script src="js/productos.json"></script>
+    <script src="js/carrito2.js"></script>
     <script src="js/productos.js"></script>
     <script src="js/favoritos.js"></script>
 </body>

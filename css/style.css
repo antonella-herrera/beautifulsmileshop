@@ -5,15 +5,28 @@
 }
 
 header {
-  display: flex;
   justify-content: space-around;
   padding: 10px;
   background-color: #ffcccc;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 header nav a, header nav a:link, header nav a:visited {
   text-decoration: none;
   color: #eb5687;
   margin-left: 10px;
+  text-align: center;
+}
+
+.header-barra {
+  text-align: center;
+}
+.header-barra a h2 {
+  text-decoration: none;
+  color: #eb5687;
 }
 
 footer {
@@ -54,6 +67,11 @@ footer {
   color: #eb5687;
 }
 
+#divInstagram {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 .div-buy {
   display: flex;
   flex-direction: column;
@@ -70,11 +88,40 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-.buttonRosas{
+h1, h2 {
+  text-align: center;
+  margin: 20px;
+}
+
+#pInicio {
+  text-align: center;
+  margin: 10px;
+}
+
+button {
   background-color: #eb5687;
   color: #ffff;
   border: none;
   padding: 10px;
+}
+
+.buttonRosas {
+  background-color: #eb5687;
+  color: #ffff;
+  border: none;
+  padding: 10px;
+}
+
+.botonesChicos {
+  background-color: transparent;
+  width: 50px;
+  border: none;
+  margin: 10px;
+  color: #eb5687;
+}
+
+button:hover {
+  transform: scale(1.025);
 }
 
 .card-product {
@@ -83,30 +130,4 @@ body {
   align-items: center;
 }
 
-.botonesChicos{
-  background-color: transparent;
-  width: 30px;
-  border: none;
-  margin: 10px;
-}
-h1{
-  text-align: center;
-  color: #eb5687;
-  font-weight: 500;
-  margin: 20px;
-}
-h2{
-  text-align: center;
-}
-.imgGrandes{
-  margin: 20px;
-}
-.imagenesChicas{
-  margin: 0px 10px;
-  width: 30px;
-}
-
-.secciones{
-  padding: 20px;
-}
 /*# sourceMappingURL=style.css.map */
