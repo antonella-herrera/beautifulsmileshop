@@ -9,6 +9,7 @@ class carritoDeCompras{
         this.carrito.push(r);
         localStorage.setItem('carrito', JSON.stringify(this.carrito));
     }
+
 }
 
 
@@ -16,6 +17,10 @@ class carritoDeCompras{
 //se crea el carrito y el total
 let CARRITO = new carritoDeCompras()
 let total= 0
+//calcular total
+function calcularTotal(){ let total= 0
+    for(let carritototal of CARRITO.carrito){total+= carritototal.precio}
+    return total}
 
 //se recupera el carrito
 const recuperoCarrito = () => { 
@@ -29,7 +34,7 @@ $(document).ready(()=>{
             recuperoCarrito()
             if (localStorage.carrito){
                 armarTablaCarrito()
-                calcularTotal()
+                
             }else{
                 carritoVacio()
 
@@ -54,9 +59,9 @@ $(document).ready(()=>{
             <tbody id="tablaCarrito">
             </tbody>
         </table>
-        <div>
+        <div class="d-flex justify-content-between">
         <p>Total:</p>
-        <p>${CARRITO.calcularTotal}</p>
+        <p>${calcularTotal()}</p>
         </div>
         <button onclick="finalizaCompra()" class="botonesChicos">Finalizar compra</button>
         </div>`)
@@ -70,8 +75,7 @@ function mostrarCariito(){
                     <td><img src="imagenes/productos/${prductosCarrito.imagen}" class="imagenesChicas" alt=" ${prductosCarrito.nombre}"></td>
                     <td>${prductosCarrito.nombre}</td>
                     <td>$${prductosCarrito.precio}</td>
-                    <td><img src="imagenes/logoseiconos/delete_black_24dp (1).svg" class="imagenesChicas" alt="elimina ${prductosCarrito.nombre}"></td>
-                </tr>`);//el boton de elimar todavia no anda
+                </tr>`);
                 }}
 
 //CARRITO VACIO
