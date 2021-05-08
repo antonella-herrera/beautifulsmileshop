@@ -37,7 +37,7 @@ header nav a, header nav a:link, header nav a:visited {
   text-decoration: none;
   color: #eb5687;
 }
-#carrito, #favoritos{
+#carrito, #favoritos, #gracias{
   height: 100vh;
   display: flex;
   flex-direction: column;
