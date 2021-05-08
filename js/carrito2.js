@@ -72,7 +72,7 @@ $(document).ready(()=>{
 function mostrarCariito(){
     for(prductosCarrito of CARRITO.carrito){
                     $('#tablaCarrito').append(`<tr>
-                    <td><img src="imagenes/productos/${prductosCarrito.imagen}" class="imagenesChicas" alt=" ${prductosCarrito.nombre}"></td>
+                    <td><img src="imagenes/productos/${prductosCarrito.imagen}" class="imagenesCarrito" alt=" ${prductosCarrito.nombre}"></td>
                     <td>${prductosCarrito.nombre}</td>
                     <td>$${prductosCarrito.precio}</td>
                 </tr>`);
@@ -82,7 +82,7 @@ function mostrarCariito(){
 function carritoVacio(){
     $('#carrito').append(`<div id ="carritoVacio" class="d-flex flex-column justify-content-center align-items-center" style="display: none">
 <h2>Lo sentinos, tu carrito esta vacio</h2>
-<a href="tienda.html"><button>Volver a la tienda</button></a>
+<a href="index.html"><button>Volver a la tienda</button></a>
 </div>`)
 };$('#carritoVacio').fadeIn(2000)
 
