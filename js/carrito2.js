@@ -88,7 +88,7 @@ function carritoVacio(){
 
 function graciasPorTuCompra(){
     $('body').append(`<secction>
-    <div class="d-flex flex-column justify-content-center align-items-center">
+    <div class="d-flex flex-column justify-content-center align-items-center" id="gracias">
     <h2>Gracias por tu compra</h2>
     <a href="index.html"><button >Volver al incio</button></a> 
     </div>
