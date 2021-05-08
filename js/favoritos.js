@@ -30,7 +30,7 @@ $(document).ready(()=>{
                 armarfavoritos()
                 mostrarfavoritos()
             }else{
-                favoritosVacio()
+                favoritoVacio()
             }     
     });
 
@@ -41,7 +41,7 @@ $(document).ready(()=>{
         </div>
     `)
     }
-
+    
 function mostrarfavoritos(){
     for(prductosFavoritos of FAVORITOS.favorito){
                     $('#favoritos').append(
@@ -59,3 +59,11 @@ function mostrarfavoritos(){
                     ;
                 }}
                 
+
+//favoritos Vacio
+function favoritoVacio(){
+    $('#favoritos').append(`<div id ="favoritosVacio" class="d-flex flex-column justify-content-center align-items-center" style="display: none">
+<h2>Lo sentinos, no tiene productos favoritos</h2>
+<a href="tienda.html"><button>Volver a la tienda</button></a>
+</div>`)
+};$('#favoritosVacio').fadeIn(2000)

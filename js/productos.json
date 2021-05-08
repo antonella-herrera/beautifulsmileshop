@@ -3,14 +3,14 @@
     "nombre": "Jean Inquita Black",
     "precio": 1900,
     "productoid": 105,
-    "imagen": "remera-basica-brekeup.jpg",
+    "imagen": "inquita-black.jpg",
     "destacado": false
 },
 {
     "nombre": "Jean Inquieta Break",
     "precio": 1200,
     "productoid": 107,
-    "imagen": "remera-basica-brekeup.jpg",
+    "imagen": "inquita-break.jpg",
     "destacado": false
 
 },
@@ -18,76 +18,76 @@
     "nombre": "Jean Inquieta",
     "precio": 1200,
     "productoid": 107,
-    "imagen": "remera-basica-brekeup.jpg",
+    "imagen": "jean-inquieta.jpg",
     "destacado": false
 },
 {
     "nombre": "Jean Reina Divina",
     "precio": 1900,
     "productoid": 108,
-    "imagen": "remera-basica-brekeup.jpg",
+    "imagen": "jean-reina-divina.jpg",
     "destacado": false
 },
 {
-    "nombre": "Jean ",
+    "nombre": "Jean Basic ",
     "precio": 1900,
     "productoid": 105,
-    "imagen": "remera-basica-brekeup.jpg",
+    "imagen": "jean-basic.jpg",
     "destacado": false
 },
 {
-    "nombre": "Remera Cartoon",
-    "precio": 800,
+    "nombre": "Jean Inquita Light",
+    "precio": 1500,
     "productoid": 200,
-    "imagen": "remera-basica-brekeup.jpg",
+    "imagen": "inquita-light.jpg",
     "destacado": false
 },
 {
-    "nombre": "Remera Voge",
+    "nombre": "Jean Inquita BS",
+    "precio": 1700,
+    "productoid": 200,
+    "imagen": "jean-inquita-bs.jpg",
+    "destacado": false
+},
+{
+    "nombre": "Remera Shout",
     "precio": 760,
     "productoid": 201,
-    "imagen": "remera-basica-brekeup.jpg",
+    "imagen": "shout.jpg",
     "stock": 2
-},
-{
-    "nombre": "Remera Phoenix",
-    "precio": 600,
-    "productoid": 202,
-    "imagen": "remera-basica-brekeup.jpg",
-    "stock": 0
 },
 {
     "nombre": "Remera Energy",
     "precio": 600,
     "productoid": 203,
-    "imagen": "remera-basica-brekeup.jpg",
+    "imagen": "energy.jpg",
     "stock": 3
 },
 {
-    "nombre": "Remera The Moon",
+    "nombre": "Remera Def Leppard",
     "precio": 600,
     "productoid": 204,
-    "imagen": "remera-basica-brekeup.jpg",
+    "imagen": "remera-def-leppard.jpg",
     "stock": 2
 },
 {
-    "nombre": "Remera Basica Algodon Premium",
+    "nombre": "Remera Harley",
     "precio": 700,
     "productoid": 205,
-    "imagen": "remera-basica-brekeup.jpg",
+    "imagen": "remera-harley.jpg",
     "stock": 3
 },
 {
-    "nombre": "Remera Luna",
+    "nombre": "Remera Lunas",
     "precio": 700,
     "productoid": 206,
-    "imagen": "remera-basica-brekeup.jpg"
+    "imagen": "lunas.jpg"
 },
 {
     "nombre": "Remera The Moon",
     "precio": 600,
     "productoid": 207,
-    "imagen": "remera-basica-brekeup.jpg",
+    "imagen": "the-moon.jpg",
     "stock": 3
 },
 {
