@@ -87,8 +87,8 @@ function carritoVacio(){
 };$('#carritoVacio').fadeIn(2000)
 
 function graciasPorTuCompra(){
-    $('body').append(`<secction>
-    <div class="d-flex flex-column justify-content-center align-items-center" id="gracias">
+    $('body').append(`<secction id="gracias">
+    <div class="d-flex flex-column justify-content-center align-items-center" >
     <h2>Gracias por tu compra</h2>
     <a href="index.html"><button >Volver al incio</button></a> 
     </div>
